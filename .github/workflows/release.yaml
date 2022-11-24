@@ -11,10 +11,10 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Install dependencies
-        run: yarn install
+        run: pnpm i
 
       - name: Compile assets
-        run: yarn build
+        run: pnpm build
 
       - name: Create block tarballs
         run: node ./release.ts
